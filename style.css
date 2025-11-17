@@ -1,0 +1,290 @@
+/* style.css */
+
+:root {
+  --background: #faf8f3;
+  --text: #2e2b25;
+  --accent: #618057;
+  --accent-light: #B6BFA4;
+  --white: #fff;
+  --section-bg: #e4e2d5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#visit-places {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;       /* allow items to wrap to new lines */
+  gap: 10px;       
+  height:600px;
+  overflow:scroll;      /* spacing between items */
+}
+
+.tourism-item {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  width: 150px;          /* reasonable width for content */
+  box-sizing: border-box; /* include padding/border in width */
+  text-align: center;     /* center title, department, image */
+}
+
+.tourism-image {
+  width: 100%;
+  height: auto;           /* maintain aspect ratio */
+  display: block;
+  margin-top: 5px;
+}
+
+body {
+  font-family: 'Playfair Display', Georgia, serif;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header.hero {
+  position: relative;
+  background: var(--accent);
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+}
+
+header .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+.plan{
+  background-color: blue;
+
+}
+.hero-content h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+}
+
+.hero-content .location {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #e6e2d8;
+}
+
+.section {
+  padding: 4rem 1.5rem;
+  text-align: center;
+  background-color: var(--accent);
+  color: white;
+}
+
+
+.section:nth-of-type(even) {
+  background-color: var(--section-bg);
+  color: var(--accent)
+}
+.section:nth-of-type(even) h2 {
+  background-color: var(--section-bg);
+  color: var(--accent)
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--section-bg);
+  font-weight: 100;
+}
+
+.section p, .section li {
+  max-width: 700px;
+  margin: 0.5rem auto;
+  display: block;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 30px; /* space between items */
+}
+
+.timeline li {
+  display: flex;
+  flex-direction: column; /* stack icon, time, activity */
+  align-items: center;
+  text-align: center;
+  gap: 10px; /* spacing between icon, time, activity */
+}
+
+.timeline li i {
+  font-size: 3rem; /* bigger icons */
+  color: white; /* optional icon color */
+}
+
+.timeline .time {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.timeline .activity {
+  font-size: 1rem;}
+  
+.travel-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.travel-options div {
+  background: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  width: 280px;
+}
+
+.travel-options h3 {
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+form input, form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  background-color: var(--white);
+}
+
+form button {
+  background: var(--accent);
+  color: var(--white);
+  border: none;
+  padding: 0.75rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: var(--accent-light);
+}
+
+.hidden {
+  display: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li a {
+  color: var(--accent);
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+ul li a:hover {
+  color: var(--accent-light);
+}
+
+a {
+  color: var(--accent);
+  display: inline;
+  white-space: nowrap;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: var(--accent);
+  color: var(--white);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
+
+#submit{
+  border-radius: 4px;
+  border: 0.5px solid rgb(181, 181, 181)
+}
+.nav-bar-list{
+  display:flex;
+  justify-content: space-evenly;
+  padding: 5px;
+}
+.nav-bar-list li{
+  background-color: var(--accent-light);
+  padding:12px;
+  font-size: 1.3rem;
+  border-radius:2px;
+}
+.nav-bar-list li{
+text-decoration: none;
+}
+.nav-bar-list li:hover{
+background-color: var(--section-bg);
+}
+
+.nav-bar{
+  background-color: var(--accent-light);
+  border-bottom:2px solid rgb(167, 167, 167);
+}
+
+#visit-map{
+  width: 50%;
+
+  gap: 10px;       
+  height:600px;
+
+}
+#tourism-content{
+  display:flex;
+}
+
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .timeline li {
+    width: 90%;
+  }
+  .travel-options div {
+    width: 90%;
+  }
+  .section {
+    padding: 3rem 1rem;
+  }
+}

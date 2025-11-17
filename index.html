@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/622a4eef00.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <title>Gabriel & Hortense – Wedding</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <ul class="nav-bar-list">
+        <a href="#plan"><li>Timeline</li></a>
+        <a href="#travel"><li>Travel</li></a>
+        <a href="#stay"><li>Visit France</li></a>
+        <a href="#rsvp"><li>RSVP</li></a>
+        <a href="#registry"><li>Registry</li></a>
+        <a href="#dance"><li>Dances</li></a>
+      </ul>
+    </nav>
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Gabriel & Hortense</h1>
+        <p>Le Grand Jour — 22 August 2025</p>
+        <p class="location">Poursay, Charante-Maritime, France</p>
+      </div>
+    </header>
+    <div class="overlay"></div>
+    <video width="100%" autoplay playsinline controls>
+      <source src="https://github.com/quazzaing/G-H-Wedding/raw/refs/heads/main/images/output.mp4" type="video/mp4" />
+    </video>
+
+    <section id="plan" class="section">
+      <h2>Le Grand Jour</h2>
+      <ul class="timeline">
+        <li>
+          <i class="fa-solid fa-church"></i>
+          <span class="time"><strong>3:00 PM</strong></span>
+          <span class="activity">Wedding Mass</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-cocktail"></i>
+          <span class="time"><strong>5:00 PM</strong></span>
+          <span class="activity">Cocktails & Games</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-utensils"></i>
+          <span class="time"><strong>7:30 PM</strong></span>
+          <span class="activity">Dinner & Speeches</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-cheese"></i>
+          <span class="time"><strong>8:00 PM</strong></span>
+          <span class="activity">Cheese & Dessert</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-music"></i>
+          <span class="time"><strong>10:00 PM</strong></span>
+          <span class="activity">Dance, Dance!</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="travel" class="section">
+      <h2>How to Get There</h2>
+      <p>
+        The wedding is being hosted at the Quazza family home: <a href="https://www.google.com/maps/place/Poursay,+17380+Torx%C3%A9,+France/@45.9568009,-0.6787412,3734m/data=!3m1!1e3!4m10!1m2!2m1!1sPoursay!3m6!1s0x480121170a59d1b5:0x2f9dfedf3aa9f1ef!8m2!3d45.9565923!4d-0.6721941!15sCgdQb3Vyc2F5kgEFcm91dGXgAQA!16s%2Fg%2F1tc_80wh?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D">Poursay, Torxé</a>. <br><br>
+        The Church is <a href="https://www.google.com/maps/place/%C3%89glise+Saint-Martin+de+Tonnay-Boutonne/@45.953977,-0.7204738,11380m/data=!3m1!1e3!4m9!1m2!2m1!1sPoursay!3m5!1s0x480123e4873732e7:0xa70d71150cc5c4fd!8m2!3d45.9661293!4d-0.7056459!16s%2Fg%2F113dy2s_z?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D">Eglise St Martin de Tonnay-Boutonne</a>.
+        <br><br>Note: the church is a 30 mins walk from the wedding venue. If you find an accommodation in Tonnay Boutonne or Torxé, you won’t need a car during the wedding day.
+      </p>
+
+      <div class="travel-options">
+        <div>
+          <h3>By Car</h3>
+          <p>
+Google maps knows the places (see links above) - ‘Poursay, Torxé’ (note - there’s another Poursay that’s about 30mins drive out so make sure to include Torxé in the search).
+          </p>
+        </div>
+        <div>
+          <h3>By Train</h3>
+          <p>
+The closest train station to the wedding venue is Surgères, closely followed by Saint Jean d’Angely (book <a href="https://www.sncf-connect.com/en-en?esl-k=google-ads|ng|c576717754754|mb|ksncf%20connect|p|t|dc|a135614990634|g15996538454&gad_campaignid=15996538454&gad_source=1&gbraid=0AAAAAD2tsGdI_LfjPctjhhoVpm1qfl08c&gclid=CjwKCAiA8bvIBhBJEiwAu5ayrBSfvqHq3Ae8TvSbR1-Vkdk-kcElDT-i1j77SI_v2AE73aa-i5NGuhoCW98QAvD_BwE&gclsrc=aw.ds&prex=SEA">via SNCF connect</a>). There are direct trains from Paris to Surgères.
+If you need help getting from the train station to the venue, we’re happy to help!
+Useful tip: you can get the equivalent of a railcard (<a href="https://www.sncf-connect.com/en-en/catalogue/description/carte-avantage-adulte">Carte Avantage Adulte</a>) which gives you and a +1 30% discount off your trip.
+          </p>
+        </div>
+        <div>
+          <h3>By Plane</h3>
+          <p>
+            The closest airports to the wedding venue are
+            <strong>Poitiers (PIS)</strong> and
+            <strong>La Rochelle (LRH)</strong> however the most frequent flights
+            from the UK go to <strong>Bordeaux (BOD)</strong> (via Skyscanner).
+            From there, we would recommend renting a car (<a href="https://www.kayak.fr/cars/Bordeaux,Nouvelle-Aquitaine,France-c8375/2026-08-21/2026-08-23;map?ucs=12z2ijy&sort=rank_a" target="_blank">via Kayak</a>) or car pool (<a href="https://www.blablacar.co.uk/search?fn=Bordeaux%2C+France&tn=Tonnay-Boutonne%2C+France&db=2026-08-21&seats=1&search_origin=HOME&from_place_id=eyJpIjoiQ2hJSmdjcFI5LWduVlEwUmlYbzVld09HWTNrIiwicCI6MSwidiI6MSwidCI6WzRdfQ%3D%3D&to_place_id=eyJpIjoiQ2hJSkVVU09NTzRqQVVnUlpOVXlMNjVWaGM0IiwicCI6MSwidiI6MSwidCI6WzRdfQ%3D%3D">via Blablacar</a>) to get to the destination.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="stay" class="section">
+      <h2>Where to Stay</h2>
+      <p>
+        We’ve compiled some nearby accommodation options in the region of
+        Poitou-Charentes.
+      </p>
+      <a
+        href="https://docs.google.com/spreadsheets/d/1OcPacerXSdk0I-qdP71xg6BjiDoS8oQtubX4_GBVPI4/edit?gid=1147914432#gid=1147914432"
+        target="_blank"
+        >View accommodation list →</a
+      >
+    </section>
+
+    <section id="visit" class="section">
+      <h2>Visit France</h2>
+      <p>
+        Make a holiday of it! Whether you love history, food, or adventure,
+        there’s so much to explore nearby.
+      </p>
+      <div id="tourism-content">
+        <div id="visit-places"></div>
+        <div id="visit-map"></div>
+      </div>
+    </section>
+
+    <section id="rsvp" class="section">
+      <h2>RSVP</h2>
+      <p>Please let us know if you can join us!</p>
+      <form id="rsvp-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+        <label for="attending">I would like to attend</label>
+        <input type="radio" value="attending" id="attending" name="rsvp-bool" />
+        <label for="not-attending">Sorry, I can't make it!</label>
+        <input
+          type="radio"
+          value="not-attending"
+          id="not-attending"
+          name="rsvp-bool"
+        />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+        <label for="dietary-requirements"
+          >Please let us know any dietary requirements:</label
+        >
+        <input
+          type="text"
+          id="dietary-requirements"
+          name="dietaryRequirements"
+        />
+        <button id="submit" type="submit">Send</button>
+      </form>
+      <p id="confirmation" class="hidden">
+        Thank you for your message! We can’t wait to celebrate with you.
+      </p>
+      <p>Email: <a href="mailto:quazzaing@gmail.com">quazzaing@gmail.com</a></p>
+    </section>
+
+    <section id="registry" class="section">
+      <h2>Wedding Registry</h2>
+      To be confirmed - check back at a later date.
+      <!-- <a href="" target="_blank">Visit our registry →</a> -->
+    </section>
+
+    <section id="dance" class="section">
+      <h2>Dances</h2>
+      <h2>Rock / Ceilidh 101</h2>
+      <p>
+        Get ready to dance! There’ll be a caller on the night, so no experience
+        required — just bring your energy!
+      </p>
+      <ul>
+        <li>
+          <a href="https://www.youtube.com/watch?v=ZjA5LFSPjqo" target="_blank"
+            >Watch basic steps</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://open.spotify.com/playlist/0R3mhEEAtmOUcmmGqItbGq"
+            target="_blank"
+            >Listen to the playlist</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>With love, Gabriel & Hortense</p>
+    </footer>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
