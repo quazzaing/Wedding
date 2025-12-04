@@ -31,6 +31,15 @@
   width: 150px;          /* reasonable width for content */
   box-sizing: border-box; /* include padding/border in width */
   text-align: center;     /* center title, department, image */
+  color: var(--accent);
+      font-family: 'Aboreto', Georgia, serif;
+}
+
+.tourism-item a {
+  all: unset;          /* clears inherited styles */
+  cursor: pointer;     /* re-enable pointer if needed */
+  color: inherit;      /* set whatever you want */
+  text-decoration: none; /* or none */
 }
 
 .tourism-image {
@@ -39,6 +48,8 @@
   display: block;
   margin-top: 5px;
 }
+
+
 
 body {
   font-family: 'Aboreto', Georgia, serif;
@@ -233,6 +244,10 @@ a {
   white-space: nowrap;
 }
 
+.whitelink{
+  color:white;
+}
+
 a:hover {
   text-decoration: underline;
 }
@@ -274,12 +289,13 @@ background-color: var(--accent-light);
 }
 
 #visit-map{
-  width: 50%;
-
+  width: 95%;
+  margin: 20px;
   gap: 10px;       
   height:600px;
 
 }
+
 #tourism-content{
   display:flex;
 }
@@ -299,3 +315,33 @@ background-color: var(--accent-light);
     padding: 3rem 1rem;
   }
 }
+
+  .legend {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    line-height: 1.4;
+    align-items: center;
+    flex-wrap: nowrap; 
+    justify-content: space-evenly;
+
+  }
+  .legend div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+  .legend div:last-child {
+    margin-bottom: 0;
+  }
+  .legend span {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+    border-radius: 3px;
+  }
+  
