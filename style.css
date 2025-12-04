@@ -3,7 +3,7 @@
 :root {
   --background: #faf8f3;
   --text: #2e2b25;
-  --accent: #618057;
+  --accent: #69805F;
   --accent-light: #B6BFA4;
   --white: #fff;
   --section-bg: #e4e2d5;
@@ -25,7 +25,7 @@
 
 .tourism-item {
   background-color: white;
-  border: 1px solid black;
+  border: 0px solid black;
   border-radius: 5px;
   padding: 5px;
   width: 150px;          /* reasonable width for content */
@@ -41,21 +41,27 @@
 }
 
 body {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Aboreto', Georgia, serif;
   background-color: var(--background);
   color: var(--text);
   line-height: 1.6;
 }
 
+p {
+  font-family: 'Jomolhari', sans-serif;
+}
+
+
 header.hero {
   position: relative;
   background: var(--accent);
-  height: 30vh;
+  height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: var(--white);
+  border-bottom:2px solid var(--accent-light);
 }
 
 header .overlay {
@@ -67,6 +73,7 @@ header .overlay {
 .hero-content {
   position: relative;
   z-index: 1;
+  
 }
 .plan{
   background-color: blue;
@@ -84,7 +91,7 @@ header .overlay {
 
 .hero-content .location {
   margin-top: 0.5rem;
-  font-style: italic;
+  font-style: regular;
   color: #e6e2d8;
 }
 
@@ -108,7 +115,7 @@ header .overlay {
 .section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: var(--section-bg);
+  color: var(--background);
   font-weight: 100;
 }
 
@@ -136,16 +143,17 @@ header .overlay {
 
 .timeline li i {
   font-size: 3rem; /* bigger icons */
-  color: white; /* optional icon color */
+  color: #e4e2d5; /* optional icon color */
 }
 
 .timeline .time {
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1.4rem;
+  color: #faf8f3;
 }
 
 .timeline .activity {
-  font-size: 1rem;}
+  font-size: 1rem;
+  color: #faf8f3;}
   
 .travel-options {
   display: flex;
@@ -166,6 +174,8 @@ header .overlay {
 .travel-options h3 {
   color: var(--accent);
   margin-bottom: 0.5rem;
+  font-weight: 400;
+  font-size: 24px;
 }
 
 form {
@@ -245,21 +255,22 @@ footer {
   padding: 5px;
 }
 .nav-bar-list li{
-  background-color: var(--accent-light);
+  background-color: var(--accent);
   padding:12px;
   font-size: 1.3rem;
   border-radius:2px;
 }
 .nav-bar-list li{
 text-decoration: none;
+color: white;
 }
 .nav-bar-list li:hover{
-background-color: var(--section-bg);
+background-color: var(--accent-light);
 }
 
 .nav-bar{
-  background-color: var(--accent-light);
-  border-bottom:2px solid rgb(167, 167, 167);
+  background-color: var(--accent);
+  border-bottom:2px solid var(--accent-light);
 }
 
 #visit-map{
