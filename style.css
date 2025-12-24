@@ -66,7 +66,7 @@ p {
 header.hero {
   position: relative;
   background: var(--accent);
-  height: 20vh;
+  height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -355,7 +355,7 @@ background-color: var(--accent-light);
     display: flex;
     gap: 20px;
     font-size: 14px;
-    background: #fff;
+    background: #e4e2d5;
     padding: 10px;
     border-radius: 6px;
     line-height: 1.4;
